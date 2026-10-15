@@ -1,0 +1,42 @@
+{
+  "name": "app-library",
+  "version": "1.0.0",
+  "description": "Система управління бібліотекою",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "mocha -r ts-node/register \"tests/**/*.test.ts\"",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "chai": "^4.5.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^17.6.0",
+    "mocha": "^10.8.2",
+    "prettier": "^3.9.10",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.1.6",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^4.4.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
