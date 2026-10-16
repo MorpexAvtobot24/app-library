@@ -128,7 +128,7 @@ class App {
                         showModal({ title: 'Успіх', message: `Книгу повернуто.`, type: 'success' });
                         this.saveData();
                     } else {
-                        const userId = prompt('Введіть ID користувача для позичення книги:');
+                        const userId = window.prompt('Введіть ID користувача для позичення книги:');
                         if (!userId) return;
 
                         const valid = Validation.validateUserId(userId);
